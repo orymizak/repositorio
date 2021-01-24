@@ -3,19 +3,70 @@
 <head>
 	<title>Hola mundo</title>
 </head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+table, th, tr { 
+	border: 1px solid black;
+	padding: 5px;
+  border-collapse: collapse;
+
+}
+</style>
 <body>
 
 	<center>
-	<p >
-	Convertidor de números Arábigos a Maya
-	</p>
 	<div>
-		<label class="label">Número arábigo (1 a 399):</label>
-		<input type="text" id="name" name="name" required minlength="1" maxlength="399" size="3"/>
-		<button class="send">Enviar</button>
+		Convertidor de números Arábigos - Maya
 		<div>
+			<label class="label">Número arábigo (1 a 7999):</label>
+			<input type="number" id="number" minlength="1" maxlength="3" size="3" min = "1" max = "7999" required></input>
+			<button onclick="validarNum()">Enviar</button>
+			<p id="ejemplo"> </p>
+				<table class ="table">
+					<tr>
+						<th>Resultado</th>
+					</tr>
+					<tr>
+						<th id ="Nivel 3"> </th>
+					</tr>
+					<tr>
+						<th id ="Nivel 2"> </th>
+					</tr>
+					<tr>
+						<th id ="Nivel 1"> </th>
+					</tr>
+				</table>
+			<br>
+			<div class = "panel">
+			<label class="label">Número maya</label>
+			<p id="ejemplo2"> </p>
+					<table class ="table">
+						<tr>
+							<th>Nivel</th>
+							<th>Multiplicador</th>
+							<th>Números</th>
+						</tr>
+						<tr>
+							<th>1</th>
+							<th id = "maya_1"> </th>
+							<th></th>
+						</tr>
+						<tr>
+							<th>2</th>
+							<th id = "maya_2"> </th>
+							<th></th>
+						</tr>
+						<tr>
 
-		</div>
+							<th>3</th>
+							<th id = "maya_3"> </th>
+							<th></th>
+						</tr>
+					</table>
+				</div>	
 	</div>
 	</center>
 </body>
@@ -25,20 +76,21 @@
 function validarNum() {
   var inpObj = document.getElementById("number");
   var valor = inpObj.value;
-  if (valor < 1 || valor > 399)
+  if (valor < 1 || valor > 7999)
   	{
   		if (valor == '')
   		{
-    		document.getElementById("demo").innerHTML = "No se ha ingresado ningún número.";
+    		document.getElementById("ejemplo").innerHTML = "No se ha ingresado ningún número.";
   		}
   		else
 		{
-    		document.getElementById("demo").innerHTML = "El número "+valor+" no es válido.";
+    		document.getElementById("ejemplo").innerHTML = "El número "+valor+" no es válido.";
 		}
 	}
 	else
   	{	
-    	document.getElementById("demo").innerHTML = " ";
+    	document.getElementById("ejemplo").innerHTML = " ";
+    		operación();
   	} 
 } 
 
