@@ -4,6 +4,7 @@
 	<title>Hola mundo</title>
 </head>
 <body>
+
 	<center>
 	<p >
 	Convertidor de números Arábigos a Maya
@@ -13,9 +14,34 @@
 		<input type="text" id="name" name="name" required minlength="1" maxlength="399" size="3"/>
 		<button class="send">Enviar</button>
 		<div>
-			
+
 		</div>
 	</div>
 	</center>
 </body>
+</html> 
+<script type="text/javascript">
+
+function validarNum() {
+  var inpObj = document.getElementById("number");
+  var valor = inpObj.value;
+  if (valor < 1 || valor > 399)
+  	{
+  		if (valor == '')
+  		{
+    		document.getElementById("demo").innerHTML = "No se ha ingresado ningún número.";
+  		}
+  		else
+		{
+    		document.getElementById("demo").innerHTML = "El número "+valor+" no es válido.";
+		}
+	}
+	else
+  	{	
+    	document.getElementById("demo").innerHTML = " ";
+  	} 
+} 
+
+</script>
+
 </html>
