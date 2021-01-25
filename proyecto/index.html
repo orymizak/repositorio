@@ -95,6 +95,29 @@ function validarNum() {
 } 
 
 function operación() {
+	var input = parseInt(document.getElementById("number").value);
+
+	document.getElementById("Nivel 1").innerHTML = " ";
+	document.getElementById("Nivel 2").innerHTML = " ";
+	document.getElementById("Nivel 3").innerHTML = " ";
+
+	var result = conversión(input);
+	var elements = result.split("-");
+	var1 = elements[0];
+	var2 = elements[1];
+	var3 = elements[2];
+
+		document.getElementById("Nivel 1").innerHTML = "test";
+
+	if (input > 19){
+		document.getElementById("Nivel 2").innerHTML = "test2";
+	}
+	if (input > 399) {
+		document.getElementById("Nivel 3").innerHTML = "test3";
+	}
+}
+
+function conversión(input) {
 
 	var nivel1 = 1, nivel2 = 20, nivel3 = 400;
 	var var1=0, var2=0, var3=0;
