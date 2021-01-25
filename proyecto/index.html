@@ -4,28 +4,75 @@
 	<title>Hola mundo</title>
 </head>
 <style>
+body {
+  background-size:100%;
+  background-repeat:no-repeat;
+  zoom: 150%;
+}
 * {
   box-sizing: border-box;
 }
-
 img, .img {
   width: 20px; 
   heigth:20px;
 }
 
+#ejemplo2
+{
+	color:darkred;  
+	font-weight: bold;
+}
+ #ejemplo
+{
+	color:darkblue;  
+	font-weight: bold;
+}
+
+#resultado
+{
+	text-align: center;
+}
+
+.panel {
+  float: left;
+  width: 400px;
+  height: 500px;
+  background-color:rgba(255,22,25,.65);
+  padding: 10px;
+  border-radius: 25px 0px 0px 25px;
+}
+
+.panel2 {
+  float: left;
+  width: 400px;
+  height: 500px;
+  background-color:rgba(0,232,255,.8);
+  padding: 10px;
+  border-radius: 0px 25px 25px 0px ;
+}
+
+.main{
+  content: "";
+  display: table;
+  clear: both;
+  height:300px;	
+}
+
 table, th, tr { 
 	border: 1px solid black;
-	padding: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
   border-collapse: collapse;
 
 }
 </style>
-<body>
 
-	<center>
-	<div>
-		Convertidor de números Arábigos - Maya
+<body>
+	<center style = "background-color:rgba(255,255,255,.7);">
+	<div class ="main">
+		<h2>Convertidor de números Arábigos - Maya</h2>
 		<div>
+			<div class = "panel">
 			<label class="label">Número arábigo (1 a 7999):</label>
 			<input type="number" id="number" minlength="1" maxlength="3" size="3" min = "1" max = "7999" required></input>
 			<button onclick="validarNum()">Enviar</button>
@@ -45,17 +92,32 @@ table, th, tr {
 					</tr>
 				</table>
 			<br>
-			<div class = "panel">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<a href="tutorial.html"><button>Tutorial</button></a>
+
+			</div>	
+			<div class = "panel2">
 			<label class="label">Número maya</label>
 			<p id="ejemplo2"> </p>
-					<table class ="table">
-						<tr>
-							<th>Nivel</th>
-							<th>Multiplicador</th>
-							<th>Números</th>
-						</tr>
-						<tr>
-						<th>1</th>
+				<table class ="table">
+					<tr>
+						<th>Nivel</th>
+						<th>Multiplicador</th>
+						<th>Números</th>
+					</tr>
+					<tr>
+						<th>3</th>
 						<th id = "maya_1">&nbsp;</th>
 						<th>
 						<input type="image" id = "a0" class ="img" onclick="deleteA(this)" src='src/clean.png'/>
@@ -108,7 +170,7 @@ table, th, tr {
 						</th>
 					</tr>
 					<tr>
-						<th>3</th>
+						<th>1</th>
 						<th id = "maya_3"><img id = "M3" name = "0" src='src/0.png'/></th>
 						<th>
 						<input type="image" name="0" id = "c0" class ="img" onclick="mayaC(this)" src='src/0.png'/>
@@ -133,15 +195,45 @@ table, th, tr {
 						<input type="image" name="19" id = "c19" class ="img" onclick="mayaC(this)" src='src/19.png'/><br>
 						</th>
 					</tr>
+					<td colspan="2"><center>Resultado</center></td>
+					<th><input id ="resultado" disabled style="background:transparent;border:none; width:50px;" value = "0"></input></th>
 					<tr>
 					</tr>
 				</table>
-				</div>	
+				<br>
+				<table>
+				<tr>
+				</tr>
+				</table>
+				<br>
+				<br>
+			</div>
+		</div>
 	</div>
+
 	</center>
 </body>
 </html> 
 <script type="text/javascript">
+
+function deleteA(){
+	//alert("deleted");
+		var verif = document.getElementById("M2");
+		if (verif != null)
+		{
+			if (verif.name == "0")
+			{
+				document.getElementById("maya_2").innerHTML = " ";
+			}
+		}
+	document.getElementById("maya_1").innerHTML = " ";
+}
+
+function deleteB(){
+	//alert("deleted");
+	document.getElementById("maya_2").innerHTML = " ";
+	document.getElementById("maya_1").innerHTML = " ";
+}
 
 function mayaB(a) { //nivel 1
 	//alert(a.name);
