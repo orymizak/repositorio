@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+img, .img {
+  width: 20px; 
+  heigth:20px;
+}
+
 table, th, tr { 
 	border: 1px solid black;
 	padding: 5px;
@@ -50,28 +55,133 @@ table, th, tr {
 							<th>Números</th>
 						</tr>
 						<tr>
-							<th>1</th>
-							<th id = "maya_1"> </th>
-							<th></th>
-						</tr>
-						<tr>
-							<th>2</th>
-							<th id = "maya_2"> </th>
-							<th></th>
-						</tr>
-						<tr>
-
-							<th>3</th>
-							<th id = "maya_3"> </th>
-							<th></th>
-						</tr>
-					</table>
+						<th>1</th>
+						<th id = "maya_1">&nbsp;</th>
+						<th>
+						<input type="image" id = "a0" class ="img" onclick="deleteA(this)" src='src/clean.png'/>
+						<input type="image" name="1" id = "a1" class ="img" onclick="mayaB(this)" src='src/1.png'/>
+						<input type="image" name="2" id = "a2" class ="img" onclick="mayaB(this)" src='src/2.png'/>
+						<input type="image" name="3" id = "a3" class ="img" onclick="mayaB(this)" src='src/3.png'/>
+						<input type="image" name="4" id = "a4" class ="img" onclick="mayaB(this)" src='src/4.png'/><br>
+						<input type="image" name="5" id = "a5" class ="img" onclick="mayaB(this)" src='src/5.png'/>
+						<input type="image" name="6" id = "a6" class ="img" onclick="mayaB(this)" src='src/6.png'/>
+						<input type="image" name="7" id = "a7" class ="img" onclick="mayaB(this)" src='src/7.png'/>
+						<input type="image" name="8" id = "a8" class ="img" onclick="mayaB(this)" src='src/8.png'/>
+						<input type="image" name="9" id = "a9" class ="img" onclick="mayaB(this)" src='src/9.png'/><br>
+						<input type="image" name="10" id = "a10" class ="img" onclick="mayaB(this)" src='src/10.png'/>
+						<input type="image" name="11" id = "a11" class ="img" onclick="mayaB(this)" src='src/11.png'/>
+						<input type="image" name="12" id = "a12" class ="img" onclick="mayaB(this)" src='src/12.png'/>
+						<input type="image" name="13" id = "a13" class ="img" onclick="mayaB(this)" src='src/13.png'/>
+						<input type="image" name="14" id = "a14" class ="img" onclick="mayaB(this)" src='src/14.png'/><br>
+						<input type="image" name="15" id = "a15" class ="img" onclick="mayaB(this)" src='src/15.png'/>
+						<input type="image" name="16" id = "a16" class ="img" onclick="mayaB(this)" src='src/16.png'/>
+						<input type="image" name="17" id = "a17" class ="img" onclick="mayaB(this)" src='src/17.png'/>
+						<input type="image" name="18" id = "a18" class ="img" onclick="mayaB(this)" src='src/18.png'/>
+						<input type="image" name="19" id = "a19" class ="img" onclick="mayaB(this)" src='src/19.png'/>
+						</th>
+					</tr>
+					<tr>
+						<th>2</th>
+						<th id = "maya_2">&nbsp;</th>
+						<th>
+						<input type="image" name="0" id = "b0" class ="img" onclick="maya(this)" src='src/0.png'/>
+						<input type="image" name="1" id = "b1" class ="img" onclick="maya(this)" src='src/1.png'/>
+						<input type="image" name="2" id = "b2" class ="img" onclick="maya(this)" src='src/2.png'/>
+						<input type="image" name="3" id = "b3" class ="img" onclick="maya(this)" src='src/3.png'/>
+						<input type="image" name="4" id = "b4" class ="img" onclick="maya(this)" src='src/4.png'/><br>
+						<input type="image" name="5" id = "b5" class ="img" onclick="maya(this)" src='src/5.png'/>
+						<input type="image" name="6" id = "b6" class ="img" onclick="maya(this)" src='src/6.png'/>
+						<input type="image" name="7" id = "b7" class ="img" onclick="maya(this)" src='src/7.png'/>
+						<input type="image" name="8" id = "b8" class ="img" onclick="maya(this)" src='src/8.png'/>
+						<input type="image" name="9" id = "b9" class ="img" onclick="maya(this)" src='src/9.png'/><br>
+						<input type="image" name="10" id = "b10" class ="img" onclick="maya(this)" src='src/10.png'/>
+						<input type="image" name="11" id = "b11" class ="img" onclick="maya(this)" src='src/11.png'/>
+						<input type="image" name="12" id = "b12" class ="img" onclick="maya(this)" src='src/12.png'/>
+						<input type="image" name="13" id = "b13" class ="img" onclick="maya(this)" src='src/13.png'/>
+						<input type="image" name="14" id = "b14" class ="img" onclick="maya(this)" src='src/14.png'/><br>
+						<input type="image" name="15" id = "b15" class ="img" onclick="maya(this)" src='src/15.png'/>
+						<input type="image" name="16" id = "b16" class ="img" onclick="maya(this)" src='src/16.png'/>
+						<input type="image" name="17" id = "b17" class ="img" onclick="maya(this)" src='src/17.png'/>
+						<input type="image" name="18" id = "b18" class ="img" onclick="maya(this)" src='src/18.png'/>
+						<input type="image" name="19" id = "b19" class ="img" onclick="maya(this)" src='src/19.png'/><br>
+						<input type="image" id = "a0" class ="img" onclick="deleteB(this)" src='src/clean.png'/>
+						</th>
+					</tr>
+					<tr>
+						<th>3</th>
+						<th id = "maya_3"><img id = "M3" name = "0" src='src/0.png'/></th>
+						<th>
+						<input type="image" name="0" id = "c0" class ="img" onclick="mayaC(this)" src='src/0.png'/>
+						<input type="image" name="1" id = "c1" class ="img" onclick="mayaC(this)" src='src/1.png'/>
+						<input type="image" name="2" id = "c2" class ="img" onclick="mayaC(this)" src='src/2.png'/>
+						<input type="image" name="3" id = "c3" class ="img" onclick="mayaC(this)" src='src/3.png'/>
+						<input type="image" name="4" id = "c4" class ="img" onclick="mayaC(this)" src='src/4.png'/><br>
+						<input type="image" name="5" id = "c5" class ="img" onclick="mayaC(this)" src='src/5.png'/>
+						<input type="image" name="6" id = "c6" class ="img" onclick="mayaC(this)" src='src/6.png'/>
+						<input type="image" name="7" id = "c7" class ="img" onclick="mayaC(this)" src='src/7.png'/>
+						<input type="image" name="8" id = "c8" class ="img" onclick="mayaC(this)" src='src/8.png'/>
+						<input type="image" name="9" id = "c9" class ="img" onclick="mayaC(this)" src='src/9.png'/><br>
+						<input type="image" name="10" id = "c10" class ="img" onclick="mayaC(this)" src='src/10.png'/>
+						<input type="image" name="11" id = "c11" class ="img" onclick="mayaC(this)" src='src/11.png'/>
+						<input type="image" name="12" id = "c12" class ="img" onclick="mayaC(this)" src='src/12.png'/>
+						<input type="image" name="13" id = "c13" class ="img" onclick="mayaC(this)" src='src/13.png'/>
+						<input type="image" name="14" id = "c14" class ="img" onclick="mayaC(this)" src='src/14.png'/><br>
+						<input type="image" name="15" id = "c15" class ="img" onclick="mayaC(this)" src='src/15.png'/>
+						<input type="image" name="16" id = "c16" class ="img" onclick="mayaC(this)" src='src/16.png'/>
+						<input type="image" name="17" id = "c17" class ="img" onclick="mayaC(this)" src='src/17.png'/>
+						<input type="image" name="18" id = "c18" class ="img" onclick="mayaC(this)" src='src/18.png'/>
+						<input type="image" name="19" id = "c19" class ="img" onclick="mayaC(this)" src='src/19.png'/><br>
+						</th>
+					</tr>
+					<tr>
+					</tr>
+				</table>
 				</div>	
 	</div>
 	</center>
 </body>
 </html> 
 <script type="text/javascript">
+
+function mayaB(a) { //nivel 1
+	//alert(a.name);
+	var verif = document.getElementById("maya_2").innerHTML;
+	if (verif=="&nbsp;")
+	{
+		document.getElementById("ejemplo2").innerHTML ="No se puede añadir un número arriba sin números abajo.";
+	}
+	else
+	{
+		document.getElementById("maya_1").innerHTML = "<img id = 'M1' name = "+a.name+" src='src/"+a.name+".png'/>";
+		document.getElementById("ejemplo2").innerHTML = " ";
+
+	}
+}
+
+function maya(a) { //nivel 2
+	//alert(a.name);
+	var verif = document.getElementById("M3");
+	var verif2 = document.getElementById("maya_1").innerHTML;
+
+	if (verif.name == '0' && a.name == '0' && verif2 == "&nbsp;")
+	{
+		document.getElementById("ejemplo2").innerHTML = "No puedes amontonar un cero sobre otro.";
+	}
+	else if (verif2 == "&nbsp;" && a.name == '0')
+	{
+		document.getElementById("ejemplo2").innerHTML ="No puedes amontonar un cero sin un valor arriba.";
+	}
+	else
+	{
+		document.getElementById("maya_2").innerHTML = "<img id = 'M2' name = "+a.name+" src='src/"+a.name+".png'/>";
+		document.getElementById("ejemplo2").innerHTML = " ";
+	}
+}
+
+function mayaC(a) { //nivel 3
+	document.getElementById("maya_3").innerHTML = "<img id = 'M3' name = "+a.name+" src='src/"+a.name+".png'/>"
+	document.getElementById("ejemplo2").innerHTML = " ";
+}
 
 function validarNum() {
   var inpObj = document.getElementById("number");
@@ -107,13 +217,13 @@ function operación() {
 	var2 = elements[1];
 	var3 = elements[2];
 
-		document.getElementById("Nivel 1").innerHTML = "test";
+		document.getElementById("Nivel 1").innerHTML = insertarImg(var1);
 
 	if (input > 19){
-		document.getElementById("Nivel 2").innerHTML = "test2";
+		document.getElementById("Nivel 2").innerHTML = insertarImg(var2);
 	}
 	if (input > 399) {
-		document.getElementById("Nivel 3").innerHTML = "test3";
+		document.getElementById("Nivel 3").innerHTML = insertarImg(var3);
 	}
 }
 
@@ -155,6 +265,73 @@ function conversión(input) {
 
 	var result = var1+"-"+var2+"-"+var3;
 	return result;
+}
+
+function insertarImg(e) {
+	img = "";
+	switch (e) {
+		case '0':
+		img = "<img src ='src/0.png'></img>";
+		break;
+		case '1':
+		img = "<img src ='src/1.png'></img>";
+		break;
+		case '2':
+		img = "<img src ='src/2.png'></img>";
+		break;
+		case '3':
+		img = "<img src ='src/3.png'></img>";
+		break;
+		case '4':
+		img = "<img src ='src/4.png'></img>";
+		break;
+		case '5':
+		img = "<img src ='src/5.png'></img>";
+		break;
+		case '6':
+		img = "<img src ='src/6.png'></img>";
+		break;
+		case '7':
+		img = "<img src ='src/7.png'></img>";
+		break;
+		case '8':
+		img = "<img src ='src/8.png'></img>";
+		break;
+		case '9':
+		img = "<img src ='src/9.png'></img>";
+		break;
+		case '10':
+		img = "<img src ='src/10.png'></img>";
+		break;
+		case '11':
+		img = "<img src ='src/11.png'></img>";
+		break;
+		case '12':
+		img = "<img src ='src/12.png'></img>";
+		break;
+		case '13':
+		img = "<img src ='src/13.png'></img>";
+		break;
+		case '14':
+		img = "<img src ='src/14.png'></img>";
+		break;
+		case '15':
+		img = "<img src ='src/15.png'></img>";
+		break;
+		case '16':
+		img = "<img src ='src/16.png'></img>";
+		break;
+		case '17':
+		img = "<img src ='src/17.png'></img>";
+		break;
+		case '18':
+		img = "<img src ='src/18.png'></img>";
+		break;
+		case '19':
+		img = "<img src ='src/19.png'></img>";
+		break;
+	}
+	return img;
 }
 
 </script>
